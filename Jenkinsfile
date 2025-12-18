@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('build') {
             steps {
-                bat 'npm --version'
+                bat 'npm run build'
             }
         }
     }
